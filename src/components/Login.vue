@@ -1,5 +1,5 @@
 <template>
-    <!-- <img alt="Vue logo" src="../assets/logo.png" class="logo"> -->
+    <img alt="Vue logo" src="../assets/logo.png" style="width: 100px;" />
         <h1>Login Form</h1>
         
         <div class="login">

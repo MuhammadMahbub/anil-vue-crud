@@ -1,7 +1,7 @@
 <template>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
-  <img alt="Vue logo" src="./assets/logo.png" style="width: 100px;">
+  <!-- <img alt="Vue logo" src="./assets/logo.png" style="width: 100px;"> -->
 
   <router-view />
 
@@ -22,7 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .logo {
     width: 100px;

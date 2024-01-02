@@ -1,26 +1,15 @@
 <template>
     <div>
-        <h1>Sign Up</h1>
-
-        <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail">Name</label>
-                    <input v-model="name" type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
-                        placeholder="Enter Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input v-model="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input v-model="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button v-on:click="signUp" type="button" class="btn btn-primary">Submit</button>
-            </form>
+        <img alt="Vue logo" src="../assets/logo.png" style="width: 100px;" />
+        <h1>Sign Up Form</h1>
+        
+        <div class="register">
+            <input type="text" placeholder="Name" v-model="name">
+            <input type="text" placeholder="Email" v-model="email">
+            <input type="password" placeholder="Password" v-model="password">
+            <input type="button" class="button" value="Sign Up" v-on:click="signUp">
         </div>
+        <p class="log"><router-link to="/login">Login</router-link></p>
     </div>
 </template>
 
@@ -59,4 +48,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.log a{
+    background-color: rgb(3, 63, 28);
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}</style>

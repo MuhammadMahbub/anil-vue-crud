@@ -1,6 +1,5 @@
 <template>
-    <h1>Hi</h1>
-    <!-- <Header />
+    <Header />
     <div>
         <h1>Hello {{ name }}, Home Page</h1>
         <table border>
@@ -17,41 +16,44 @@
                 <td>{{ item.address }}</td>
             </tbody>
         </table>
-    </div> -->
+    </div>
 </template>
 
 <script>
-// import axios from 'axios';
-// import Header from './Header.vue';
+import axios from 'axios';
+import Header from './Header.vue';
 
 export default {
     name: "HomePage",
-    // data(){
-    //     return {
-    //         name: '',
-    //         restaurant: []
-    //     }
-    // },
-    // components:{
-    //     Header
-    // },
-    // async mounted(){
-    //         let user = localStorage.getItem('user-info');
-    //         this.name = JSON.parse(user).name;
-    //         if(!user){
-    //             this.$router.push({name:"SignUp"})
-    //         }
-
-    //         let result = await axios.get("http://localhost:3000/restaurants");
-    //         console.log(result);
-    //         this.restaurant = result.data;
-    //     }
-
-    mounted(){
+    data(){
+        return {
+            name: '',
+            restaurant: []
+        }
+    },
+    components:{
+        Header
+    },
+    async mounted(){
             let user = localStorage.getItem('user-info');
+            this.name = JSON.parse(user).name;
             if(!user){
                 this.$router.push({name:"SignUp"})
             }
+
+            let result = await axios.get("http://localhost:3000/restaurants");
+            this.restaurant = result.data;
         }
+
 }
 </script>
+
+<style>
+    table {
+        margin: auto;
+    }
+    td {
+        width: 100px;
+        height: 30px;
+    }
+</style>
