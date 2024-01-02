@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "abc@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Laravel",
+      "email": "laravel@gmail.com",
+      "password": "laravel@gmail.com"
+    },
+    {
+      "name": "a",
+      "email": "a@a.a",
+      "password": "a@a.a",
+      "id": 3
+    },
+    {
+      "name": "Hello ",
+      "email": "hello@gmail.com",
+      "password": "hello@gmail.com",
+      "id": 4
+    }
+  ]
+}
