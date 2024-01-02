@@ -27,12 +27,6 @@
   ],
   "restaurants": [
     {
-      "id": 1,
-      "name": "kfc",
-      "address": "dhala",
-      "contact": 123
-    },
-    {
       "id": 2,
       "name": "star",
       "address": "bangladesh",
@@ -63,9 +57,9 @@
       "id": 6
     },
     {
-      "name": "s",
-      "address": "s",
-      "contact": "ss",
+      "name": "saaa",
+      "address": "saaaaaa",
+      "contact": "ssaaaaaaaaa",
       "id": 7
     },
     {
